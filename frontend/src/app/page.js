@@ -4,11 +4,13 @@ import { useRouter } from "next/navigation";
 import { getBooks, deleteBook } from "../services/books.service";
 import mensajes from "./components/Mensajes";
 import { WithAuth } from "./components/withAuth";
+import { useAuth } from "@/context/AuthContext";
 
 function BooksList() {
   const [books, setBooks] = useState([]);
   const [search, setSearch] = useState("");
   const router = useRouter();
+  const { logoutUser } = useAuth();
 
   useEffect(() => {
     fetchBooks();
@@ -48,8 +50,27 @@ function BooksList() {
 
   return (
     <div className="container mt-5">
-      <div className="row mb-4">
-        <div className="col">
+      <div className="col text-start d-flex">
+        <button
+          className="btn btn-secondary m-2"
+          onClick={() => {
+            logoutUser();
+            router.push("/auth/login");
+          }}
+        >
+          Cerrar sesión
+        </button>
+        <button
+          className="btn btn-success m-2"
+          onClick={() => {
+            router.push("/auth/register");
+          }}
+        >
+          Registrar nuevo usuario
+        </button>
+      </div>
+      <div className="row">
+        <div className="col mt-3 mb-3">
           <input
             type="text"
             className="form-control"

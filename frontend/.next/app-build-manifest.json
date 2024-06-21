@@ -16,30 +16,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/auth/login/page.js"
     ],
-    "/auth/forgot-password/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/auth/forgot-password/page.js"
-    ],
-    "/auth/register/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/auth/register/page.js"
-    ],
-    "/auth/reset-password/[token]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/auth/reset-password/[token]/page.js"
-    ],
     "/books/create/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/books/create/page.js"
     ],
-    "/books/update/[id]/page": [
+    "/auth/register/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/books/update/[id]/page.js"
+      "static/chunks/app/auth/register/page.js"
     ]
   }
 }

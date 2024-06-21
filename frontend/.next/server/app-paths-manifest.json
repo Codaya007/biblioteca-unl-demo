@@ -1,8 +1,6 @@
 {
-  "/books/create/page": "app/books/create/page.js",
-  "/books/update/[id]/page": "app/books/update/[id]/page.js",
+  "/page": "app/page.js",
   "/auth/login/page": "app/auth/login/page.js",
-  "/auth/forgot-password/page": "app/auth/forgot-password/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/books/create/page": "app/books/create/page.js",
+  "/auth/register/page": "app/auth/register/page.js"
 }
